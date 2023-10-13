@@ -69,7 +69,6 @@ def load_data(city, month, day):
         # use the index of the months list to get the corresponding int
         months = ['january', 'february', 'march', 'april', 'may', 'june']
         month = months.index(month) + 1
-#         print(month_dict[month])
         # filter by month to create the new dataframe
         df = df[df['month'] == month]
     # filter by day of week if applicable
@@ -135,8 +134,6 @@ def trip_duration_stats(df):
     print('Total travel time:', total_travel_time ,'seconds.\n\n')
 
     # display mean travel time
-    # 1. calculate mean travel time in seconds with .mean()
-
     # TO DO: display mean travel time
     mean_travel_time = df['Trip Duration'].mean()
     print('Mean travel time:', mean_travel_time ,'seconds.\n\n')
